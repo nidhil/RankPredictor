@@ -20,7 +20,7 @@
             android:label="Predict your Rank"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MockUpActivity"
+            android:name=".QuizActivity"
             android:parentActivityName=".MainActivity"
             android:label="Mock Test 1"
             />
@@ -28,8 +28,8 @@
             android:name=".ShowRankActivity"
             android:label="Predicted Rank"
             android:parentActivityName=".RankPredictionActivity" />
-        <activity android:name=".ShowResultActivity"
-            android:parentActivityName=".MockUpActivity"
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".QuizActivity"
             android:label="Results" />
     </application>
 

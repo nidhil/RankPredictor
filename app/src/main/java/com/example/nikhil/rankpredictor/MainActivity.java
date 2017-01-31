@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openScores(View view){
-        Intent intent = new Intent(this, MockUpActivity.class);
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
 }

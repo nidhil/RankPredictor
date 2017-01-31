@@ -8,124 +8,79 @@ import android.widget.Toast;
  */
 
 public class Question {
-    private int id;
-    private String question;
-    private String optA;
-    private String optB;
-    private String optC;
-    private String optD;
-    private int countA;
-    private int countB;
-    private int countC;
-    private int countD;
+    private int ID;
+    private String QUESTION;
+    private String OPTA;
+    private String OPTB;
+    private String OPTC;
+    private String ANSWER;
 
-    public Question(){
-        id = 0;
-        question = "";
-        optA = "";
-        optB = "";
-        optC = "";
-        optD = "";
-        countA = 0;
-        countB = 0;
-        countC = 0;
-        countD = 0;
+    public Question() {
+        ID = 0;
+        QUESTION = "";
+        OPTA = "";
+        OPTB = "";
+        OPTC = "";
+        ANSWER = "";
     }
 
-    public Question(String Question, String OptA, String OptB, String OptC, String OptD){
-        question = Question;
-        optA = OptA;
-        optB = OptB;
-        optC = OptC;
-        optD = OptD;
+    public Question(String qUESTION, String oPTA, String oPTB, String oPTC,
+                    String aNSWER) {
+
+        QUESTION = qUESTION;
+        OPTA = oPTA;
+        OPTB = oPTB;
+        OPTC = oPTC;
+        ANSWER = aNSWER;
     }
 
-    public void saveAnswer(String answer){
-        if(answer == getOptA()) countA++;
-        if(answer == getOptB()) countB++;
-        if(answer == getOptC()) countC++;
-        if(answer == getOptD()) countD++;
-
+    public int getID() {
+        return ID;
     }
 
-    public String getOptA() {
-        return optA;
+    public String getQUESTION() {
+        return QUESTION;
     }
 
-    public void setOptA(String opta) {
-        optA = opta;
+    public String getOPTA() {
+        return OPTA;
     }
 
-    public void setOptB(String optB) {
-        this.optB = optB;
+    public String getOPTB() {
+        return OPTB;
     }
 
-    public String getOptB() {
-        return optB;
+    public String getOPTC() {
+        return OPTC;
     }
 
-    public int getId() {
-        return id;
+    public String getANSWER() {
+        return ANSWER;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setID(int id) {
+        ID = id;
     }
 
-    public String getOptC() {
-        return optC;
+    public void setQUESTION(String qUESTION) {
+        QUESTION = qUESTION;
     }
 
-    public void setOptC(String optC) {
-        this.optC = optC;
+    public void setOPTA(String oPTA) {
+        OPTA = oPTA;
     }
 
-    public String getOptD() {
-        return optD;
+    public void setOPTB(String oPTB) {
+        OPTB = oPTB;
     }
 
-    public void setOptD(String optD) {
-        this.optD = optD;
+    public void setOPTC(String oPTC) {
+        OPTC = oPTC;
     }
 
-    public int getCountA() {
-        return countA;
+    public void setANSWER(String aNSWER) {
+        ANSWER = aNSWER;
     }
 
-    public void setCountA(int countA) {
-        this.countA = countA;
-    }
-
-    public int getCountB() {
-        return countB;
-    }
-
-    public void setCountB(int countB) {
-        countB = countB;
-    }
-
-    public int getCountC() {
-        return countC;
-    }
-
-    public void setCountC(int countC) {
-        countC = countC;
-    }
-
-    public int getCountD() {
-        return countD;
-    }
-
-    public void setCountD(int countD) {
-        countD = countD;
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
-    }
 }
 
